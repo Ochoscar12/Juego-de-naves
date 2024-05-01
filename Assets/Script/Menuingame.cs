@@ -11,6 +11,9 @@ public class Menuingame : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
-
+    public void Reiniciar()
+    {
+        SceneManager.LoadScene(1);
+    }
 
 }
