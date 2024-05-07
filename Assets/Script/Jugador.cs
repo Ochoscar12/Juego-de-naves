@@ -39,7 +39,7 @@ public class Jugador : MonoBehaviour
         //Formula para velocidad y direccion.
         rb.velocity = new Vector2(0f, direction.y * speed);
         //Funcion agregada para limitar el movimiento del jugador.
-        rb.position = new Vector2 (rb.position.x,Mathf.Clamp(rb.position.y, -3.81f,3.81f));
+        rb.position = new Vector2 (rb.position.x,Mathf.Clamp(rb.position.y, -3.41f,3.41f));
     }
     //Funcion para detectar colision.
     void OnCollisionEnter2D(Collision2D collision)
