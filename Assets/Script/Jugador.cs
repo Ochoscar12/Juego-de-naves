@@ -10,6 +10,9 @@ public class Jugador : MonoBehaviour
     public Rigidbody2D rb;
     private float directionY;
     private Vector2 direction;
+    public GameObject PlayerBullet;
+    public GameObject bulletPosition;
+
     private int puntos; //variable para almacenar puntos
     private int record; //variable para almacenar record
     public Text puntostexto; //para actualizar el el texto osea los puntos
@@ -30,6 +33,11 @@ public class Jugador : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKeyDown("space"))
+        {
+            GameObject bullet = (GameObject)Instantiate(PlayerBullet);
+            bullet.transform.position = bulletPosition.transform.position;
+        }
         //Funciones para definir direccion.
         directionY = Input.GetAxisRaw("Vertical");
         direction = new Vector2(0f, directionY).normalized;
