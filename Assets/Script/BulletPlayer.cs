@@ -12,7 +12,6 @@ public class BulletPlayer : MonoBehaviour
         speed = 8f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector2 position =  transform.position;
