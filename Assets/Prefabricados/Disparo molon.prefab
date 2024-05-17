@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f2d25525cb0bc41971450878825313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntostexto: {fileID: 0}
+  recordtexto: {fileID: 0}
   rb: {fileID: -4269439995806134997}
 --- !u!50 &-4269439995806134997
 Rigidbody2D:

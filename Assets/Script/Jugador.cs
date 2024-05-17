@@ -6,11 +6,11 @@ using UnityEngine.UI; //Libreria de UI para poder modificar variables de tipo te
 public class Jugador : MonoBehaviour
 {
     //Velocidad
-    public float speed;
-    public Rigidbody2D rb;
+    public float speed;//Variable para velocidad de movimiento de nuestra nave.
+    public Rigidbody2D rb;// Variable para definicion del RigidBody.
     private float directionY;
     private Vector2 direction;
-    public GameObject PlayerBullet;
+    public GameObject PlayerBullet;//Variables para la posicion del laser
     public GameObject bulletPosition;
 
     private int puntos; //variable para almacenar puntos
@@ -33,10 +33,10 @@ public class Jugador : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space"))//Definimos que al presionar el boton espacio del teclado se active el disparo.
         {
-            GameObject bullet = (GameObject)Instantiate(PlayerBullet);
-            bullet.transform.position = bulletPosition.transform.position;
+            GameObject bullet = (GameObject)Instantiate(PlayerBullet);//Funciones para definir donde se encuentra donde saldra el
+            bullet.transform.position = bulletPosition.transform.position;//disparo.
         }
         //Funciones para definir direccion.
         directionY = Input.GetAxisRaw("Vertical");
