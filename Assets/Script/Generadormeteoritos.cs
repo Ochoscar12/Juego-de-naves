@@ -40,7 +40,7 @@ public class Generadormeteoritos : MonoBehaviour
             //Esta funcion de abajo sirve para poder indicarle a unity que cada 2 segundos se creen
             //los meteoritos y no se creen de un solo.
             yield return new WaitForSeconds(2.5f);
-            if (Meteoritosingame < 15)
+            if (Meteoritosingame < 30)
             {
                 CrearMeteorito();
             }
